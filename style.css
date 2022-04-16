@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%; /* Selalu mengisi 100% lebar browser*/
+  min-height: 100vh; /* mengikut tinggi browser*/
+  background: #6c5ce7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-danger {
+  color: #e74c3c;
+}
+
+.wrapper {
+  padding: 25px 30px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.wrapper .title {
+  font-weight: "700";
+  text-align: center;
+  font-size: 2rem; /* 32px */
+  color: #111111;
+}
+
+.wrapper .input-fields {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.wrapper .input-fields .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  width: calc(100% - 60px);
+  height: 100%;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 1rem; /* 16px */
+  transition: 0.3s;
+}
+
+.wrapper .input-fields .form-control:focus {
+  border-color: #6c5ce7;
+}
+
+.wrapper .input-fields button.btn {
+  width: 50px;
+  height: 100%;
+  background: #6c5ce7;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-size: 1rem; /* 16px */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s all ease-in-out;
+}
+
+.wrapper .input-fields button.btn:hover {
+  opacity: 1;
+}
+
+.wrapper .content ul li {
+  display: block;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .content ul li span.text {
+  padding-left: 10px;
+  color: #111111;
+}
+
+.wrapper .content ul li i.icon {
+  width: 50px;
+  height: 100%;
+  background-color: #e74c3c;
+  position: absolute;
+  right: -50px;
+  top: 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  transition: 0.2s linear;
+}
+
+.wrapper .content ul li:hover i.icon {
+  right: 0;
+}
+
+.pending-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: "600";
+}
